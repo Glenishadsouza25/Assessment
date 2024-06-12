@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .h1 {
+            height: 2px;
+            margin:5px;
+
+        }
+        .signup-form {
+            background-color: #333;
+            padding: 52px;
+            border-radius: 10px;
+            width: 421px;
+        }
+        .signup-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+
+        .signup-form button {
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            padding: 6px;
+            width: 24%;
+            border-radius: 104px;
+            margin-left: 339px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-form">
+        <h1><centre>Sign Up</centre></h1>
+        <p><i><centre>Username is your online identity</centre></i></p>
+        <ul>
+            <li>Your username should only contain letters,numbers,<br>underscores or hyphens.</li>
+            <li>No spaces or special characters allowed.</li>
+            <li>Your username should not be offensive or contain profanity.</li>
+        </ul>
+        <input type="text" placeholder="Username" id="username">
+        <input type="text" placeholder="First Name" id="firstName">
+        <input type="text" placeholder="Last Name" id="lastName">
+        
+        
+        <button onclick="submitForm()">Next</button>
+    </div>
+    <script>
+        function submitForm() {
+            const username = document.getElementById('username').value;
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            
+            console.log('Submitted:', username, firstName, lastName);
+        }
+    </script>
+</body>
+</html>
